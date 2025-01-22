@@ -7,6 +7,10 @@
   text-decoration: none;
   list-style: none;
 }
+*::selection{
+  background-color: #F633B0;
+  color: white;
+}
 
 .Navbar {
   position: fixed;

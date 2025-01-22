@@ -15,11 +15,11 @@ function Navbar() {
                 </div>
                 <div className="list">
                     <ul>
-                        <li><NavLink to={"/"} style={{ color: "black" }} >Home</NavLink></li>
-                        <li><NavLink to={"/"} style={{ color: "black" }} >Category</NavLink></li>
-                        <li><NavLink to={"/add"} style={{ color: "black" }} >Add</NavLink></li>
-                        <li><NavLink to={"/wishlist"} style={{ color: "black" }} >Wishlist({fav.length})</NavLink></li>
-                        <li><NavLink to={"/basket"} style={{ color: "black" }} >Basket({basket.length})</NavLink></li>
+                        <li><NavLink to={"/"} style={({ isActive }) => { return isActive ? { color: "#F633B0" } : { color: "black"}; }} >Home</NavLink></li>
+                        <li>Category</li>
+                        <li><NavLink to={"/add"} style={({ isActive }) => { return isActive ? { color: "#F633B0" } :  { color: "black"}; }} >Add</NavLink></li>
+                        <li><NavLink to={"/wishlist"} style={({ isActive }) => { return isActive ? { color: "#F633B0" } :  { color: "black"}; }} >Wishlist({fav.length})</NavLink></li>
+                        <li><NavLink to={"/basket"} style={({ isActive }) => { return isActive ? { color: "#F633B0" } : { color: "black"}; }}  >Basket({basket.length})</NavLink></li>
                     </ul>
                     <div className="icon">
                         <FaBars />
