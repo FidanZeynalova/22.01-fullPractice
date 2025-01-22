@@ -45,7 +45,7 @@ function Clothes() {
     function handleBasket(item) {
         let find = basket.find((wish) => wish._id == item._id)
         if (find) {
-            item.count++
+            find.count++
             setBasket([...basket])
         } else {
             setBasket([...basket, { ...item, count: 1 }])
